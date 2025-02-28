@@ -40,7 +40,8 @@ def main(index,text):
     driver.get("https://www.facebook.com/")
 
     a = text.split("|")
-    tk, mk, token = a[0], a[1], a[2]
+    tk, mk, token = a[0], a[1], get_token(a[2])
+
 
 
     time.sleep(4)
